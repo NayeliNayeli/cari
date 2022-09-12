@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💗¿Tu eres mi Bebe?💗</title>
+    <style>
+        .body {
+             background-color: gray;
+             text-align: center;
+        }
+
+        .body__title{
+             color: white;
+        }
+
+        .body__img {
+             width: 60%;
+             border-bottom: 10cm;
+        }
+        
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__title">💗¿Tu eres mi Bebe?💗</h1>
+    <img 
+         src="https://laverdadnoticias.com/export/sites/laverdad/img/2021/06/21/vegeta_y_bulma_amor.png_792370018.png" 
+         alt="Foto Nuestra" class="body__img">
+    <button id="Yes">Chi</button>
+    <button id="No">Ño</button>
+
+    <script>
+          const vutonSi = document.getElementById('Yes');
+          const vutonNo = document.getElementById('No');
+
+      const tomaChichi = () => {
+             alert('No queda de otra😿');
+             alert('Esta es nuestra música💗');
+             location.href = 'https://www.youtube.com/watch?v=L4lpAVro8Dk=9s';
+        };
+
+      const evitaqueserompamiCora =() =>{
+             vutonNo.style.position = 'absolute';
+             vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+             vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+        };
+
+          vutonSi.addEventListener('click', tomaChichi);
+          vutonNo.addEventListener('mouseover', evitaqueserompamiCora);
+    </script>
+</body>
+
+</html>
